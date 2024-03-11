@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de idade</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="Tela-cadastre.css">
+
+<body>
+    <input type="button" value="Página inicial" id="menupri" onclick="window.location.href ='Port-1principal.html';"
+        onmouseenter="menuent()" onmouseout="menufor()">
+    <header id="testhea" class="classtest"> <br>
+        <h1>Bem vindo ao teste de idade</h1>
+        <p>Aqui você poderá realizar um teste de idade, por favor preencha as informações abaixo:</p> <br><br>
+    </header>
+
+    <div id="testid" class="classtest">
+        <p>Seu nome <input type="text" name="nome" id="cadnom1" placeholder="Primeiro nome" maxlength="15">
+            <input type="text" name="nome" id="cadnom2" placeholder="Segundo nome" maxlength="15">
+        </p>
+
+        <p>Cor predileta
+            <select name="corus" id="corusu">
+                <option value="op0" id="vazio"> </option>
+                <option value="op1" id="verm">Vermelho</option>
+                <option value="op2" id="verd">Verde </option>
+                <option value="op3" id="azul">Azul </option>
+                <option value="op4" id="amar">Amarelo </option>
+                <option value="op5" id="lara">Laranja </option>
+                <option value="op6" id="roxo">Roxo </option>
+            </select>
+
+        </p>
+        <p>Ano nascimento <input type="number" name="anonas" id="anonasc" placeholder="Ano de nascimento"> </p>
+        <p>Email <input type="text" name="ema" id="cadem" placeholder="Seu email"> </p>
+        <p>Sexo <input type="radio" name="sexnam" id="masc" checked>
+            <label for="masc"> Masculino </label>
+            <input type="radio" name="sexnam" id="fem">
+            <label for="fem"> Feminino </label>
+        </p>
+        <input type="button" name="verb" id="verbut" value="Verificar idade" onclick="veriid()">
+    </div><br>
+    <div id="res"> <!--aqui é o resultado -->
+    </div>
+
+</body>
+<script src="Tela-cadastre.js"></script>
+
+</html>

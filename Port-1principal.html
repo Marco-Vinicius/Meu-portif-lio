@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio - Marco Vinicius</title>
+</head>
+<link rel="stylesheet" href="Port-1principal.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!--Icones do face e do linkedin-->
+
+<body>
+
+    <header>
+        <span id="txtnome" onmouseenter="entrarnom()" onmouseout="saiunom()">Marco Vinicius</span>
+    </header>
+    <!-- Botão para voltar para o topo-->
+    <button onclick="window.scrollTo(0, 0)" id="botaoTopo">Voltar </button>
+    <p>
+    <h2 style="text-align: center;">Seja bem vindo!</h2>
+    </p>
+    <p
+        style="font-family: Arial, sans-serif; font-size: 17px; line-height: 1.5; color: #333; text-align: center; margin: 20px 0;">
+        Eu sou o Marco Vinicius.
+        <br>Desenvolvedor front end (Javascript,Html e Css),<br> aqui você poderá saber um pouco mais sobre meus
+        conhecimentos no mundo<br>
+        da programação e um pouco sobre meus gostos pessoais.
+    </p>
+
+    <div id="mimfot">
+        </p><img src="" alt="Uma foto minha." srcset="Fotos/Minhafoto.png">
+    </div>
+
+    <!-- Botões laterais para direcionar para seção-->
+    <div class="botaolateral">
+        <button onclick="scrollToSection(2)">Sobre mim</button>
+        <button onclick="scrollToSection(3)">Projetos</button>
+        <button onclick="scrollToSection(4)">Contato</button>
+    </div>
+
+    <!-- Parte dois abaixo - Sobre mim-->
+    <div class="tabelasobremim" id="section2">
+        <div class="sobremim1">
+
+            <h2 id="titulosec2">Informações sobre mim</h2>
+            <p>
+                Aprimorando conhecimento nas seguintes habilidades: <br>
+                - Javascript, Html e Css; <br> <br>
+                Possuo os seguintes certificados:
+                - Pucpr - Conhecimento na linguagem de programação – Python 24hs;
+            </p>
+
+            <div>
+                <a href="#" class="main-btn">
+                    <span onclick="downloadcurriculo()" id="downcurri">Download CV</span>
+                    <span><i class="fas fa-download"></i></span>
+                </a>
+            </div>
+
+        </div>
+        <div class="sobremim2">
+            <div class="sobremim3">
+                <div class="txt1">
+                    <p class="txt2">Pós graduação</p>
+                    <p>PUCPR
+                        <br /> Engenharia de Software Ágil – Início (Mai/2023) - Em andamento.
+                    </p>
+                </div>
+            </div>
+            <div class="sobremim3">
+                <div class="txt1">
+                    <p class="txt2">Experiência</p>
+                    <p>com levantamento,análise<br />e classificação de requisitos</p>
+                </div>
+
+            </div>
+            <div class="sobremim3">
+                <div class="txt1">
+                    <p class="txt2">Autodidata</p>
+                    <p>Lógico e<br /> analítico</p>
+                </div>
+            </div>
+            <div class="sobremim3">
+                <div class="txt1">
+                    <p class="txt2">Experiência</p>
+                    <p> com mapeamento e<br />prototipação</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Parte três abaixo - Meus projetos-->
+    <section id="section3">
+        <div class="main-title">
+
+            <h2 id="titulosec3">Meus <span>Projetos</span></h2>
+        </div>
+        <div class="portfolios">
+            <div class="portfolio-item">
+                <div class="image"> 
+                    <img src="Fotos/Hobbies.jpg" alt="">
+
+                </div>
+                <div class="hover-items">
+                    <h3>Clique para ver meus Hobbies</h3>
+                    <div class="icons">
+                        <a href="#" class="icon">                       
+                            <input type="button" value="Meus Hobbies" class="cadbot" id="hob" onclick="meuhob()"
+                                onmouseenter="entrarhob()" onmouseout="saiuhob()">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="image">
+                    <img src="Fotos/Testeidade.jpg" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3 style="color: rgb(194, 194, 194);">Clique para realizar um teste de idade</h3>
+                    <div class="icons">
+                        <a href="#" class="icon">
+                            <input type="button" value="Teste de idade" class="cadbot" id="botcad"
+                                onclick="window.location.href = 'Tela-cadastre.html';" onmouseenter="entrarcad()"
+                                onmouseout="saiucad()">
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Parte quatro - Contate-me-->
+    <section class="container contact" id="section4">
+        <div class="contact-container">
+            <div class="main-title">
+                <h2>Contate <span>Me</span></h2>
+            </div>
+            <div class="contact-content-con">
+                <div class="left-contact">
+
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </div>
+                        <p>
+                            <span>marcoviniciusdi@gmail.com</span>
+                        </p>
+                    </div>
+
+
+
+
+
+
+                    <div class="contato">
+                        <form action="" class="formulario" id="meuform">
+                            <div class="formulariodados">
+                                <input type="text" required placeholder="SEU NOME">
+                                <input type="email" required placeholder="SEU EMAIL">
+                            </div>
+                            <div class="formulariodados">
+                                <input type="text" required placeholder="ASSUNTO">
+                            </div>
+                            <div class="formulariodados">
+                                <textarea name="" id="formulariotxt" cols="15" rows="8"
+                                    placeholder="Mensagem aqui..."></textarea>
+                            </div>
+                            <div class="enviar">
+                                <!-- Abaixo temos o botão contrate-me-->
+                                <input type="button" value="Enviar" id="contme" onclick="mecont()"
+                                    onmouseenter="entrarcont()" onmouseout="saiucont()"><br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="testfoot">
+        <p> <a href="https://www.facebook.com/marcovinicius1985/" target="_blank">
+                <i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.linkedin.com/in/marco-vinicius-a039a0a5/" target="_blank">
+                <i class="fab fa-linkedin"></i></a>
+        </p>
+    </footer>
+
+</body>
+
+<script src="Port-1principal.js"></script>
+
+
+
+</html>

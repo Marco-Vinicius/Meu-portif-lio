@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+
+</head>
+<link rel="stylesheet" href="Tela-hob.css">
+
+<body>
+    <div class="topfai"></div>
+    <div class="baixfai"></div>
+    <input type="button" value="Página inicial" id="hobmenu" onclick="window.location.href = 'Port-1principal.html';"
+        onmouseenter="hobent()" onmouseout="hobfor()">
+
+    <div class="container">
+        <div class="gameshobby"> <!-- primeira opção que é o hobby boardgame-->
+            <button id="botaogames">
+                <p>
+                <h2>Board games</h2>
+                </p>
+                <!-- botão do games, OBS: para colocar uma figura no lugar de um botão é só incluir uma imagem dentro do botão <buton> </buton>, olhe ao lado para ver-->
+                <p><img src="Fotos/Boardgames.jpg" alt="Tabuleiro de boardgame"></p>
+            </button>
+            <div id="caixa-hobgames"> <!-- esta é a caixa que vai aparecer no botão acima-->
+                <p>Gosto de jogar jogos de boardgames como Zombicide 2º edição e Gloomhaven com amigos.</p>
+                <div><img src="Fotos/presasdoleao.PNG" alt="boardgame presas do leao" style="margin-right: 50px;">
+                    <img src="Fotos/zombicide2.PNG" alt="board game zombicide 2">
+                </div>
+            </div>
+        </div>
+
+        <div class="gameshobby1">
+            <button id="botaopintura">
+                <p>
+                <h2>Pintura</h2>
+                </p>
+                <p><img src="Fotos/Pintura.jpg"></p>
+            </button>
+            <div id="caixa-pintura"> <!-- esta é a caixa que vai aparecer no botão acima-->
+                <p>Gosto de realizar pinturas de bonecos de rpg.</p>
+                <div><img src="Fotos/Pinturasbonecos.jpg" alt="boardgame presas do leao" style="margin-right: 50px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="gameshobby2">
+            <button id="botaomergulho">
+                <p>
+                <h2>Mergulho</h2>
+                </p>
+                <p><img src="Fotos/Snorkel.jpg"></p>
+            </button>
+            <div id="caixa-mergulho"> <!-- esta é a caixa que vai aparecer no botão acima-->
+                <p>Gosto de realizar mergulho com Snorkel.</p>
+                <div><img src="Fotos/snorkelilha.jpg" alt="boardgame presas do leao" style="margin-right: 50px;">
+                </div>
+            </div>
+
+        </div>
+        <div class="gameshobby3">
+            <button id="botaorock">
+                <p>
+                <h2>Rock and roll</h2>
+                </p>
+                <p><img src="Fotos/Banda de Rock and roll.jpg"></p>
+            </button>
+            <div id="caixa-rock"> <!-- esta é a caixa que vai aparecer no botão acima-->
+                <p>Tenho uma banda de Rock and Roll.</p>
+                <div><img src="Fotos/rockandroll.jpg" alt="boardgame presas do leao" style="margin-right: 50px;">
+                </div>
+            </div>
+
+        </div>
+</body>
+<script src="Tela-hob.js"></script>
+</html>

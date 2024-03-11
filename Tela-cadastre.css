@@ -1,0 +1,127 @@
+
+
+body {
+  background: linear-gradient(to right, rgb(255, 255, 255), #3498db);
+  font: normal 15pt Arial;
+  padding: 20px 40px;
+}
+
+.classtest {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#cadnom1 {
+  margin-right: 20px;
+  margin-left: 50px;
+}
+
+#cadnom1,
+#cadnom2 {
+  text-transform: capitalize;
+  /* deixa a primeira letra da palavra em maiusculo. */
+}
+
+#cadnum {
+  margin-left: 78px;
+}
+
+#corusu {
+  margin-left: 30px;
+}
+
+#verm {
+  color: red;
+}
+
+#verd {
+  color: green;
+}
+
+#azul {
+  color: blue;
+}
+
+#amar {
+  color: rgb(202, 202, 0);
+}
+
+#lara {
+  color: orange;
+}
+
+#roxo {
+  color: purple;
+}
+
+
+#anonasc {
+  margin-left: 10px;
+}
+
+#cadem {
+  margin-left: 76px;
+}
+
+#sexcad {
+  margin-left: 81px;
+}
+
+#masc {
+  margin-left: 81px;
+}
+
+
+#verbut {
+
+  width: 100px;
+  height: 40px;
+  background-color: #404952;
+  color: #fff;
+   border: none;
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+
+
+#menupri {
+
+  background-color: #196166;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-size: 12px;
+  margin-right: 55px;
+  margin-top: 20px;
+  margin-left: 10px;
+  border-bottom: 1px dotted black;
+}
+
+#testfoot {
+  text-align: center;
+  margin-right: 70px;
+}
+
+.fa-facebook-square {
+  color: #413b98;
+  font-size: 40px;
+  position: fixed;
+  bottom: 0;
+  margin-left: 49px;
+  margin-bottom: 20px;
+}
+
+.fa-linkedin {
+  color: #0e51a8;
+  font-size: 50px;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 18px;
+}
+
+
+

@@ -1,0 +1,156 @@
+
+
+
+.container {
+  /* float: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-items: center; */
+  display: flex;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Centraliza a div, estes quatro itens: posit, top, left, tranform.*/
+}
+
+#caixa-hobgames,
+#caixa-pintura,
+#caixa-mergulho,
+#caixa-rock {
+  /* display: none; */
+  visibility: hidden;
+  background-image: linear-gradient(to bottom, rgb(238, 247, 252), rgb(255, 255, 255));
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 190px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+#botaogames:hover+#caixa-hobgames,
+#botaopintura:hover+#caixa-pintura,
+#botaomergulho:hover+#caixa-mergulho,
+#botaorock:hover+#caixa-rock {
+  /* display: block; Mostra a caixa de texto quando o botão é hover */
+  visibility: visible;
+
+}
+
+
+/* Aqui eu formato outro botão games hobby - Boardgame*/
+.gameshobby {
+  z-index: 10;
+}
+
+/* Aqui eu formato outro botão games hobby - Pintura*/
+.gameshobby1 {
+  z-index: 10;
+}
+
+
+/* Aqui eu formato outro botão games hobby - Mergulho*/
+.gameshobby2 {
+  z-index: 10;
+}
+
+
+/* Aqui eu formato outro botão games hobby - Rock and roll*/
+.gameshobby3 {
+  z-index: 10;
+}
+
+/* Arredondamento da lateral da figura*/
+.gameshobby img,
+.gameshobby1 img,
+.gameshobby2 img,
+.gameshobby3 img {
+  border-radius: 10px;
+
+}
+
+.gameshobby,
+.gameshobby1,
+.gameshobby2,
+.gameshobby3 {
+  margin-right: 20px;
+  /* Adiciona espaçamento horizontal entre os elementos */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#hobmenu {
+  /* Aqui temos a estilização do botão pagina principal e das faixas de baixo e de cima.*/
+
+  background-color: rgb(35, 62, 150);
+  /* Cor de fundo verde */
+  color: rgb(255, 255, 255);
+  /* Cor do texto branco */
+  padding: 8px 10px;
+  /* Espaçamento interno */
+  border: none;
+  /* Sem borda */
+  border-radius: 4px;
+  /* Cantos arredondados */
+  cursor: pointer;
+  /* Cursor muda ao passar por cima */
+  float: right;
+  font-size: 12px;
+  margin-right: 55px;
+  margin-top: 20px;
+  margin-left: 10px;
+  border-bottom: 1px dotted black;
+  /* Adiciona uma linha pontilhada por baixo do texto */
+  position: relative;
+  /* Definir a posição como relativa */
+  z-index: 10;
+  /* Valor alto para garantir que o botão fique em cima das faixas */
+}
+
+/*faixa de cima e de baixo*/
+.topfai,
+.baixfai {
+  height: 80px;
+  /* altura da faixa */
+  width: 100%;
+  background: linear-gradient(to right, rgb(255, 255, 255), #3498db);
+  position: fixed;
+  left: 0;
+}
+
+.topfai {
+  top: 0;
+  position: absolute;
+  /* É importante que o elemento tenha uma posição especificada para que o z-index funcione */
+  z-index: 1;
+  /* Valor alto para garantir que o botão fique em cima de outros elementos */
+}
+
+.topfai,
+.baixfai {
+  bottom: 0;
+}
